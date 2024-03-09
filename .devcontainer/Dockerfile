@@ -31,7 +31,20 @@ RUN DEBIAN_FRONTEND=noninteractive \
     liblapack3 \
     liblapack-dev \
     libblas-dev \
-    libopenmpi-dev 
+    libopenmpi-dev \
+    libglew-dev \
+    libgl1-mesa-dev \
+    libgl1-mesa-glx \
+    libosmesa6-dev 
+
+# Install MuJoCo
+RUN mkdir -p /root/.mujoco \
+    && wget https://mujoco.org/download/mujoco210-linux-x86_64.tar.gz -O mujoco.tar.gz \
+    && tar -xf mujoco.tar.gz -C /root/.mujoco \
+    && rm mujoco.tar.gz
+
+ENV LD_LIBRARY_PATH /root/.mujoco/mujoco210/bin:${LD_LIBRARY_PATH}
+ENV LD_LIBRARY_PATH /usr/local/nvidia/lib64:${LD_LIBRARY_PATH}
 
 ARG USERNAME=vscode
 ARG USER_UID=1000
