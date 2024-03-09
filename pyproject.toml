@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pytorch-2-0-test"
+name = "RL_rank_reduction_research"
 version = "0.1.0"
 description = ""
 authors = ["PKramek <peterkramek@gmail.com>"]
@@ -9,6 +9,8 @@ packages = [{include = "pytorch_2_0_test"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 torch = "2.0.0"
+gymnasium = {extras = ["mujoco"], version = "^0.29.1"}
+
 
 [build-system]
 requires = ["poetry-core"]
