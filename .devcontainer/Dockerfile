@@ -30,7 +30,8 @@ RUN DEBIAN_FRONTEND=noninteractive \
     libblas3 \ 
     liblapack3 \
     liblapack-dev \
-    libblas-dev
+    libblas-dev \
+    libopenmpi-dev 
 
 ARG USERNAME=vscode
 ARG USER_UID=1000
