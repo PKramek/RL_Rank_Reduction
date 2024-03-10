@@ -35,7 +35,10 @@ RUN DEBIAN_FRONTEND=noninteractive \
     libglew-dev \
     libgl1-mesa-dev \
     libgl1-mesa-glx \
-    libosmesa6-dev 
+    libosmesa6-dev \
+    libosmesa6 \
+    libglfw3 \
+    libglew2.0
 
 # Install MuJoCo
 RUN mkdir -p /root/.mujoco \
