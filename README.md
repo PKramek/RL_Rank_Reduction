@@ -63,6 +63,6 @@ Even though the policy network is not overparametrized (i.e. we do not use thous
 
 ## Bibliography
 
-  [1] - Sharma, P., Ash, J.T. and Misra, D., 2023, October. The Truth Is In There: Improving Reasoning with Layer-Selective Rank Reduction. In The Twelfth International Conference on Learning Representations. <https://arxiv.org/abs/2312.13558>
-  [2] - Chen, L., Lu, K., Rajeswaran, A., Lee, K., Grover, A., Laskin, M., Abbeel, P., Srinivas, A. and Mordatch, I., 2021. Decision transformer: Reinforcement learning via sequence modeling. Advances in neural information processing systems, 34, pp.15084-15097. <https://arxiv.org/abs/2106.01345>
-  [3] - Shi, Z. and Singh, S.P., 2021. Soft actor-critic with cross-entropy policy optimization. arXiv preprint arXiv:2112.11115. <https://arxiv.org/abs/2112.11115>
+- [1] - Sharma, P., Ash, J.T. and Misra, D., 2023, October. The Truth Is In There: Improving Reasoning with Layer-Selective Rank Reduction. In The Twelfth International Conference on Learning Representations. <https://arxiv.org/abs/2312.13558>
+- [2] - Chen, L., Lu, K., Rajeswaran, A., Lee, K., Grover, A., Laskin, M., Abbeel, P., Srinivas, A. and Mordatch, I., 2021. Decision transformer: Reinforcement learning via sequence modeling. Advances in neural information processing systems, 34, pp.15084-15097. <https://arxiv.org/abs/2106.01345>
+- [3] - Shi, Z. and Singh, S.P., 2021. Soft actor-critic with cross-entropy policy optimization. arXiv preprint arXiv:2112.11115. <https://arxiv.org/abs/2112.11115>
