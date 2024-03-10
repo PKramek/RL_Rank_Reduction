@@ -1,4 +1,4 @@
-# Low rank aproxximation in Reinforcement Learning problems
+# Low rank approximation in Reinforcement Learning problems
 
 This repository contains code used when experimenting with Layer-Selective Rank Reduction (LASER) [1] in the context of a reinforcement learning framework. In the paper, the authors described that using the Low-Rank approximation on the Decision Transformer [2] gives a 3% increase in performance on the Sokoban task. However, there is no discussion of the performance delta in the context of control problems with continuous action and observation spaces.
 
@@ -8,8 +8,8 @@ In the experiments, I only modified the trained policy network $\Pi$. I did not 
 
 | layer | target_rank | mean_reward         | std_reward          | mean_reward_delta   | std_reward_delta    |
 | ----- | ----------- | ------------------- | ------------------- | ------------------- | ------------------- |
-| 4*     | 6**           | 5118.12175909224    | 71.46035253699091   | **53.86377664187421**   | **-412.3522091505959**  |
-| 2     | 251         | 5114.784104478223   | 86.10277523500716   | **50.52612202785713**   | **-397.7097864525797**  |
+| 4*    | 6**         | 5118.12175909224    | 71.46035253699091   | **53.86377664187421**| **-412.3522091505959**  |
+| 2     | 251         | 5114.784104478223   | 86.10277523500716   | **50.52612202785713**| **-397.7097864525797**  |
 | 0     | 17          | 5016.641569900629   | 638.1735183894699   | -47.6164125497362   | 154.36095670188308  |
 | 2     | 201         | 4974.570160872144   | 483.07604632969276  | -89.6878215782217   | -0.7365153578940635 |
 | 2     | 226         | 4916.723239957853   | 915.0345070982617   | -147.53474249251212 | 431.22194541067483  |
