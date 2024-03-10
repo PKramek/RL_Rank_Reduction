@@ -56,6 +56,8 @@ In the experiments, I only modified the trained policy network $\Pi$. I did not 
 
 Even though the policy network is not overparametrized (i.e. we do not use thousands of neurons in each layer), the rank reduction of the weight matrices increased the performance of the agent by approximately **1%**. Interestingly, when applying low-rank aproximation with the target rank equal to the original rank of the matrix in the last layer (first row in the results table), we also get a performance boost.
 
+The most striking result of applying low-rank approximation intervention is the reduction of the standard deviation of the results. This shows, that even though the usage of low-rank approximation does not increase the performance of the model dramatically, it reduces the amount of noise in the policy.
+
 ## Notes
 
 - As of now, I only performed experiments on a single environment and policy obtained by using a single RL algorithm. To draw any objective conclusions, more experiments need to be performed. The goal of the described experiment was only to test a hypothesis, that the idea described in the LASER paper can be applied to smaller networks, not only Transformers.  
